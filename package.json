@@ -1,0 +1,20 @@
+{
+  "name": "vuepress-starter",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "repository": "http://localhost/",
+  "author": "swimming",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.9"
+  },
+  "scripts": {
+    "docs:dev": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress dev docs",
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider & vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "dependencies": {
+    "vuepress-plugin-auto-sidebar": "^2.3.2"
+  }
+}
