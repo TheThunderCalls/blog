@@ -188,24 +188,4 @@ explicit_defaults_for_timestamp=true
 
 
 
-## Idea
 
-### Debugger
-
-#### 远程debugger调试
-
-> 远程debugger就是断点打在本地环境，但是代码跑在远程服务器上
-
-##### tomcat服务
-
-1] 找到远程服务器的tomcat，找到bin目录，打开catalina.sh服务，开启远程debug，重启tomcat
-
-![Idea远程debug-linux](/assets/img/Idea-debug-linux.png)
-
-> CATALINA_OPTS="-server -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8788"
-
-注：address：ip
-
-2] idea配置远程连接
-
-![image-20230804103902992](/assets/img/Idea-debug-idea.png)
